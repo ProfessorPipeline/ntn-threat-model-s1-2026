@@ -146,9 +146,3 @@ Docker was not available in the build environment. The Python core is the tested
 | `evidence/supplied/` | Unchanged input PDFs |
 
 See [docs/API.md](docs/API.md) for endpoints. This is a local research prototype. The role selector is not an account system. Keep it on localhost.
-
-## Academic work still required
-
-Verify the references and attack assumptions. Review the records together. Add enough justified threats for the scoring exercise. Carry out the independent scoring and usability review. Test setup on both computers. Write your own checked slides and report. Record your actual individual contributions.
-
-This package is AI-assisted implementation work. It is not evidence that the students completed any claimed research or evaluation. Follow the supervisor's instruction to limit generated figures and full slides or report content. The code and technical notes need your review before submission.

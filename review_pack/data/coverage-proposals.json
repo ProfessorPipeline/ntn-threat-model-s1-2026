@@ -1,0 +1,734 @@
+[
+  {
+    "entity": "C1",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-01"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C1",
+    "stride": "Tampering",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Could user-side state or transmitted data be changed before endpoint protection? Define the in-scope UE state and a separate mechanism before claiming this cell is closed.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C1",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "The bounded UE model has no selected administrative action history. User content authorship and full UE application auditing are outside the chosen workflow.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C1",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-03"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C1",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-06"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C1",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "The selected UE has no modeled operating-system roles or privilege transition. Revisit if UE software internals are introduced.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C2",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-01"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C2",
+    "stride": "Tampering",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "C2 is a transparent relay. Onboard configuration and command-system changes are excluded. Transit integrity questions are kept on the radio-flow review rather than claiming a modeled onboard mutation path.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C2",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "No in-scope administrative action or audit store is assigned to the transparent relay.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C2",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-03"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C2",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-06"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C2",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "C2 has no modeled software authorization role. Regenerative payloads and satellite command systems are excluded.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C3",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-07"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C3",
+    "stride": "Tampering",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-02"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C3",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-05"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C3",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-03",
+      "T-09"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C3",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Check gateway resource exhaustion separately from service-radio jamming and core-facing overload. Its capacities and transport implementation are unknown.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C3",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-08"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C4",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-07"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C4",
+    "stride": "Tampering",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-02",
+      "T-10"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C4",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-05"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C4",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-09"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C4",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-04"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C4",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-08"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C5",
+    "stride": "Spoofing",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Consider impersonation of an authorized core-facing peer. Establish identity and credential assumptions. T-10 concerns traffic integrity and is not automatically a peer-spoofing record.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C5",
+    "stride": "Tampering",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-10"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C5",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "C5 represents N2/N3 interfaces. Full core administration and its action history are excluded. Revisit if interface-level accountability becomes a selected asset.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C5",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Consider core-facing transport disclosure separately from T-10 tampering. Define the failed confidentiality control and scope of exposed data.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C5",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-04"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C5",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "Core privilege-management internals are excluded. Interface data handling alone is not a modeled core administrator role transition.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C6",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-07"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C6",
+    "stride": "Tampering",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Decide whether local C6 tools or stored configuration can be altered. This is different from changing C3/C4 through an otherwise legitimate administrator.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C6",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-05"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C6",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-09"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C6",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Determine the consequence of losing the administration endpoint while the access service continues. Add an administration-availability candidate if justified.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "C6",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-08"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F1",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-01"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F1",
+    "stride": "Tampering",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Specify whether an on-path radio manipulation could survive the assumed endpoint integrity checks. Do not infer plaintext modification merely from exposed radio signals.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F1",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "This flow does not store an administrative action history. Accountability is assessed at the selected administration endpoints. Revisit if independent message-receipt evidence becomes an explicit requirement.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F1",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-03"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F1",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-06"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F1",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "The flow itself makes no authorization decision. Privilege transitions belong to its endpoints. This does not rule out endpoint authorization defects.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F2",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "No separately authenticated feeder-source identity is defined in this transparent-relay model. This is a scope interpretation for student approval. Revisit when a feeder identity or control protocol is specified.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F2",
+    "stride": "Tampering",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Assess feeder-segment modification with the stated endpoint protections. No independent unprotected feeder protocol has been specified.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F2",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "This flow does not store an administrative action history. Accountability is assessed at the selected administration endpoints. Revisit if independent message-receipt evidence becomes an explicit requirement.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F2",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-03"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F2",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Feeder interference is distinct from T-06 service-radio interference. The location and victim differ. Add a justified separate candidate if it belongs in the final catalogue.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F2",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "The flow itself makes no authorization decision. Privilege transitions belong to its endpoints. This does not rule out endpoint authorization defects.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F3",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "No separately identified F3 application principal is selected. The transport technology is unspecified. Revisit rather than claiming immunity if F3 peer authentication is introduced.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F3",
+    "stride": "Tampering",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-02"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F3",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "This flow does not store an administrative action history. Accountability is assessed at the selected administration endpoints. Revisit if independent message-receipt evidence becomes an explicit requirement.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F3",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "First define the ground-transport technology and its confidentiality boundary. Project F3 must not be assumed to be the standardized split-gNB F1 interface.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F3",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Define how ground transport fails or saturates and who can reach it. Current interface-capacity assumptions do not establish this case.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F3",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "The flow itself makes no authorization decision. Privilege transitions belong to its endpoints. This does not rule out endpoint authorization defects.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F4",
+    "stride": "Spoofing",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Consider unauthorized core-facing peer identity separately from a payload-integrity failure. Keep N2 and N3 requirements distinct where necessary.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F4",
+    "stride": "Tampering",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-10"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F4",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "This flow does not store an administrative action history. Accountability is assessed at the selected administration endpoints. Revisit if independent message-receipt evidence becomes an explicit requirement.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F4",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Consider confidentiality failure on the selected N3 or N2 transport. T-10 is a Tampering record rather than a completed disclosure analysis.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F4",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-04"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F4",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed no separate threat identified",
+    "threat_ids": [],
+    "reason": "The flow itself makes no authorization decision. Privilege transitions belong to its endpoints. This does not rule out endpoint authorization defects.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F5",
+    "stride": "Spoofing",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-07"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F5",
+    "stride": "Tampering",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-02"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F5",
+    "stride": "Repudiation",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-05"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F5",
+    "stride": "Information Disclosure",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-09"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F5",
+    "stride": "Denial of Service",
+    "suggested_outcome": "Research question — pending",
+    "threat_ids": [],
+    "reason": "Define the availability consequence of losing management transport. Avoid reusing the core-traffic DoS record without a matching mechanism.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "F5",
+    "stride": "Elevation of Privilege",
+    "suggested_outcome": "Proposed link",
+    "threat_ids": [
+      "T-08"
+    ],
+    "reason": "The listed candidate explicitly maps to this architecture unit and STRIDE category. Check its conditions and evidence before recording a human outcome.",
+    "student_review_status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  }
+]

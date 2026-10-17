@@ -1,0 +1,74 @@
+Source: Email text supplied by the user with the build request.
+No emails were sent by this project.
+
+MESSAGE 1 — SUPERVISOR
+
+Dear John and Marius,
+
+Please contact Johan as soon as possible regarding the “Initial project scope and partner agreement” assignment. Its deadline was 20 September, before your current group and revised plan were established. Ask him whether the assignment can be reopened and how you should submit the revised project plan and team charter. Please keep me informed of his response.
+
+As agreed, please send me a joint progress update by email, Friday, 16 October, at 12:00 noon, Stockholm time.
+The update should briefly include:
+
+The latest architecture/data-flow diagram, showing the components, assets, interfaces and trust boundaries. You may use diagrams.net or another suitable tool.
+The proposed threat-identification and ranking procedures.
+An updated list of specific scientific and technical references.
+Five to ten completed example threat records, including their sources, ratings, confidence levels and candidate mitigations.
+The current status of the database and web prototype, including screenshots or a short demonstration link, if available.
+A clear description of the work completed individually by John and Marius.
+Your plan for the mandatory mid-seminar on 21 October, including what you expect to demonstrate.
+
+The progress update should be no more than two pages, excluding the architecture diagram and supporting attachments. It should show concrete progress and clearly identify any issues that may prevent you from meeting the mid-seminar requirements.
+
+Best regards,
+Sandeewani
+
+MESSAGE 2 — JOINT STUDENT UPDATE
+
+Hi Sandeewani,
+
+Thank you for our last meeting and for the help and feedback so far, we really appreciate it!
+
+We've reached out to Johan and asked to open the assignment again and the deadline in this next Sunday on the 18th.
+
+We've also tried to include your previous suggestions, but we would still need to dive deeper into the proposed references you mentioned.
+
+Please find attached our two-page progress update for the 6G NTN threat-modeling project, with the architecture and data-flow diagram as Figure A.
+
+In short:
+- Architecture: scenario S1 (rural UE, transparent LEO relay, NTN gateway, ground gNB, 5G Core interfaces, administration endpoint), with components, assets, flows and four trust boundaries.
+- Method: STRIDE identification, now using attack feasibility instead of likelihood. The qualitative priority score is feasibility × impact, shown in a 4×4 priority matrix with defined criteria for each level.
+- Consistency check: we will independently rate 10–15 threats, compare results and document how differences are resolved.
+- Threat records: five completed examples with threat actor and conditions, assumed controls, mappings, ratings with reasons, sources, confidence levels and candidate mitigations.
+- Prototype: status of the database, API and web interface, and our individual contributions, are in the update.
+- Mid-seminar: we plan a live demo, an architecture and method review, and preliminary consistency results.
+
+Main open issues: finishing the consistency check before 21 October, strengthening the evidence behind the threat records (most are still assumption-based with low confidence), and confirming the final course deadlines.
+
+We would welcome your feedback on the method and on the mid-seminar plan. Thank you!
+
+Kind regards,
+Marius and John
+
+MESSAGE 3 — LATEST SUPERVISOR FEEDBACK
+
+Dear John and Marius,
+
+Thank you for the progress update. Good job!!!
+
+For the mid-seminar as per Johan mention under Q n A in canvas, you will have about 20 minutes to present, followed by 10 minutes for questions and feedback. Please cover the problem, scope, architecture, method, progress, preliminary results, challenges and next steps. Remember to submit both the PPTX slides and the progress report.
+
+Your ranking method is acceptable, but please clearly say that the 4×4 matrix and priority bands are your own adaptation. Ansong et al. use a different matrix. Also explain why four levels are useful for your scenario.
+
+For the prototype demonstration, please decide:
+
+what user workflow and threat records you will show on Oct 21st
+how you will show ratings, evidence and mitigations
+whether the core application works without the LLM and OpenWebUI
+how both of you will take part in the demonstration
+
+Please test everything beforehand and record a short backup video in case the live demo, Docker or internet connection fails.
+
+Please limit using generative AI to create Figures, full slides or report content. You are responsible for checking all content and references.
+
+Best regards,

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#132332">
+  <title>S1 Observatory · NTN threat model</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workspace</a>
+  <aside class="sidebar">
+    <a class="brand" href="#catalogue"><span class="brand-mark" aria-hidden="true">S1</span><span>Observatory<small>NTN THREAT MODEL</small></span></a>
+    <div class="sidebar-label">WORKSPACE</div>
+    <nav aria-label="Workspace">
+      <a href="#catalogue" data-page="catalogue"><span aria-hidden="true">▤</span> Threat catalogue</a>
+      <a href="#architecture" data-page="architecture"><span aria-hidden="true">◇</span> Architecture</a>
+      <a href="#method" data-page="method"><span aria-hidden="true">⊞</span> Ranking method</a>
+      <a href="#coverage" data-page="coverage"><span aria-hidden="true">▦</span> STRIDE coverage</a>
+      <a href="#consistency" data-page="consistency"><span aria-hidden="true">⇄</span> Independent scoring</a>
+      <a href="#sources" data-page="sources"><span aria-hidden="true">≡</span> Sources</a>
+      <a href="#demo" data-page="demo"><span aria-hidden="true">▷</span> Demo guide</a>
+    </nav>
+    <div class="scenario-card"><div class="eyebrow">SELECTED SCENARIO</div><strong>S1 · Rural access</strong><p>Transparent LEO relay<br>One operator · Static snapshot</p><span class="live-dot"></span> Local core application</div>
+    <div class="sidebar-foot">D7086E · Luleå University of Technology<br>John N. Saal · Marius C. Untaru</div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>D7086E <span class="slash">/</span> <strong>Research prototype</strong></span><div><span class="local-status"><span class="live-dot"></span> No LLM required</span><a class="button small subtle" href="/api/database.sqlite3" download>Save database</a></div></header>
+    <main id="main" tabindex="-1"><div class="loading">Opening the local workspace…</div></main>
+    <footer class="workspace-foot"><span>S1 · Existing 5G NTN baseline for future 6G discussion</span><span>Model-based study · No live attack measurements</span></footer>
+  </div>
+  <dialog id="editor"><div id="dialog-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

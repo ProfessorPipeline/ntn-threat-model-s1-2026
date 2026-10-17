@@ -1,0 +1,10 @@
+{
+  "web/app.js": {
+    "original_sha256": "7be7618d49f22779d95c0a40b84f32b3a9e81d26d5349568fad1df80ed4af575",
+    "updated_sha256": "07c3b00a040a30d756c0fbb98b94b9ed5a01b07546203f1ad2c78fb4853b24a3"
+  },
+  "scripts/build_backup.py": {
+    "original_sha256": "0fc036d2848eda23002ef167694239b601a7341f2e4f10c7ada325f06ab36997",
+    "updated_sha256": "c607089693f9c2102b601fc7c149ddc6e2436e2efe22bc8d37b03c1c1be6986e"
+  }
+}

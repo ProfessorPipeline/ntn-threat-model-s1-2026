@@ -1,0 +1,494 @@
+{
+  "references": [
+    {
+      "id": "R1",
+      "citation": "3GPP TS 33.501 — Security architecture and procedures for 5G system.",
+      "kind": "Technical standard",
+      "doi": "",
+      "note": "Bibliographic details copied from the progress update. Exact edition and source sections are not provided. The underlying publication was not checked in this build."
+    },
+    {
+      "id": "R2",
+      "citation": "3GPP TR 38.821 — Solutions for NR to support non-terrestrial networks (NTN).",
+      "kind": "Technical report",
+      "doi": "",
+      "note": "Bibliographic details copied from the progress update. Exact edition and source sections are not provided. The underlying publication was not checked in this build."
+    },
+    {
+      "id": "R3",
+      "citation": "J. Pavur et al. — A Tale of Sea and Sky: On the Security of Maritime VSAT Communications. IEEE S&P. 2020.",
+      "kind": "Research paper",
+      "doi": "",
+      "note": "Bibliographic details copied from the progress update. Exact edition and source sections are not provided. The underlying publication was not checked in this build."
+    },
+    {
+      "id": "R4",
+      "citation": "A. Shostack — Threat Modeling: Designing for Security. Wiley. 2014.",
+      "kind": "Book",
+      "doi": "",
+      "note": "Bibliographic details copied from the progress update. Exact edition and source sections are not provided. The underlying publication was not checked in this build."
+    },
+    {
+      "id": "R5",
+      "citation": "Ansong et al. — Role of Cybersecurity for a Secure Global Communication Eco-System. 2025.",
+      "kind": "Research paper",
+      "doi": "10.1016/j.cose.2024.104156",
+      "note": "Bibliographic details copied from the progress update. Exact edition and source sections are not provided. The underlying publication was not checked in this build."
+    },
+    {
+      "id": "R6",
+      "citation": "Frøseth et al. — Threat Modeling in Satellite Communications for Maritime Operations. 2025.",
+      "kind": "Research paper",
+      "doi": "10.1007/978-3-031-82349-7_26",
+      "note": "Bibliographic details copied from the progress update. Exact edition and source sections are not provided. The underlying publication was not checked in this build."
+    },
+    {
+      "id": "R7",
+      "citation": "Suomalainen et al. — Cybersecurity for Tactical 6G Networks. 2025.",
+      "kind": "Research paper",
+      "doi": "10.1016/j.future.2024.107500",
+      "note": "Bibliographic details copied from the progress update. Exact edition and source sections are not provided. The underlying publication was not checked in this build."
+    },
+    {
+      "id": "P1",
+      "citation": "Supplied Project Plan — Threat Modeling Tool for 6G NTN. D7086E. 11 pages.",
+      "kind": "Project document",
+      "doi": "",
+      "note": "Provided by the user. Requirements and provenance only. Not independent evidence for a real attack."
+    },
+    {
+      "id": "P2",
+      "citation": "Supplied Mid-Seminar Progress Update v3. 16 October 2026. 2 pages.",
+      "kind": "Project document",
+      "doi": "",
+      "note": "Provided by the user. Requirements and provenance only. Not independent evidence for a real attack."
+    },
+    {
+      "id": "P3",
+      "citation": "Supplied Project Team Charter — Threat Modeling Tool for 6G NTN. 3 pages.",
+      "kind": "Project document",
+      "doi": "",
+      "note": "Provided by the user. Requirements and provenance only. Not independent evidence for a real attack."
+    },
+    {
+      "id": "E1",
+      "citation": "Email thread supplied with this build request. Supervisor feedback and joint update.",
+      "kind": "Supplied email",
+      "doi": "",
+      "note": "Provided by the user. Requirements and provenance only. Not independent evidence for a real attack."
+    }
+  ],
+  "threats": [
+    {
+      "id": "T-01",
+      "scenario": "S1",
+      "title": "UE–satellite link spoofing",
+      "stride": "Spoofing",
+      "description": "A transmitter inside the beam imitates network signalling on the service radio link.",
+      "actor": "Attacker with a radio transmitter inside the beam.",
+      "conditions": "Suitable transmitter and protocol skill. Authentication limits success.",
+      "controls": "5G mutual authentication and signalling integrity protection are assumed active.",
+      "consequence": "Potential effect on UEs in the area. Success against the assumed controls is not established.",
+      "components": [
+        "C1",
+        "C2"
+      ],
+      "assets": [
+        "A2",
+        "A3"
+      ],
+      "flows": [
+        "F1"
+      ],
+      "boundaries": [
+        "TB1"
+      ],
+      "feasibility": 2,
+      "impact": 3,
+      "feasibility_reason": "Specialist transmitter and protocol skill are required. Authentication limits success.",
+      "impact_reason": "The supplied record assumes effects on UEs sharing access in the area.",
+      "confidence": "Low",
+      "confidence_reason": "Low in the supplied update. Ratings depend on stated assumptions and unchecked source support.",
+      "evidence": [
+        {
+          "reference_id": "R1",
+          "basis": "Context",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "The supplied update cites 5G security. It does not identify a supporting section for this specific spoofing path."
+        },
+        {
+          "reference_id": "R2",
+          "basis": "Context",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "NTN architecture context is cited. The specific attack path remains unverified."
+        },
+        {
+          "reference_id": null,
+          "basis": "Assumption",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "The actor can reach the relevant beam. Several-user consequences are assumed. Successful bypass of mutual authentication is not demonstrated."
+        }
+      ],
+      "mitigations": [
+        {
+          "text": "Mutual authentication and cryptographic signing of access requests.",
+          "reference_id": "R1",
+          "note": "Candidate copied from the supplied update. Specific source support and suitability for S1 still require a human check."
+        }
+      ],
+      "review_status": "Imported",
+      "reviewer": "",
+      "review_date": "",
+      "origin": "Progress update v3. Page 1. Example T-01. Imported without claiming a new student review.",
+      "limitations": "A model-based candidate. No live attack or RF validation. Effects on several users are assumptions about the shared S1 service."
+    },
+    {
+      "id": "T-02",
+      "scenario": "S1",
+      "title": "NTN gateway tampering",
+      "stride": "Tampering",
+      "description": "An insider or an attacker with gateway management access alters configuration.",
+      "actor": "Insider or attacker with gateway management access.",
+      "conditions": "Privileged access and a plausible configuration weakness.",
+      "controls": "Admin authentication and configuration backup are assumed.",
+      "consequence": "Compromise of ground administration.",
+      "components": [
+        "C3",
+        "C4"
+      ],
+      "assets": [
+        "A4"
+      ],
+      "flows": [
+        "F3",
+        "F5"
+      ],
+      "boundaries": [
+        "TB4"
+      ],
+      "feasibility": 2,
+      "impact": 4,
+      "feasibility_reason": "Privileged access is required.",
+      "impact_reason": "Ground administration can be compromised under the stated conditions.",
+      "confidence": "Low",
+      "confidence_reason": "Low in the supplied update. Ratings depend on stated assumptions and unchecked source support.",
+      "evidence": [
+        {
+          "reference_id": null,
+          "basis": "Assumption",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "The supplied record is assumption-based. No gateway-specific evidence or configuration is provided."
+        }
+      ],
+      "mitigations": [
+        {
+          "text": "TPM-based integrity checks on gateway-to-gNB configuration.",
+          "reference_id": "R4",
+          "note": "Candidate copied from the supplied update. Specific source support and suitability for S1 still require a human check."
+        }
+      ],
+      "review_status": "Imported",
+      "reviewer": "",
+      "review_date": "",
+      "origin": "Progress update v3. Page 1. Example T-02. Imported without claiming a new student review.",
+      "limitations": "A model-based candidate. No live attack or RF validation. Effects on several users are assumptions about the shared S1 service."
+    },
+    {
+      "id": "T-03",
+      "scenario": "S1",
+      "title": "Satellite relay eavesdropping",
+      "stride": "Information Disclosure",
+      "description": "A passive receiver in the footprint observes radio traffic. The record concerns metadata rather than decryption of ciphertext.",
+      "actor": "Passive receiver in the satellite footprint.",
+      "conditions": "Receiving equipment and access to the relevant radio signal.",
+      "controls": "User-plane ciphering is assumed active.",
+      "consequence": "Limited metadata exposure. Ciphertext is not assumed to be decrypted.",
+      "components": [
+        "C2"
+      ],
+      "assets": [
+        "A1"
+      ],
+      "flows": [
+        "F1",
+        "F2"
+      ],
+      "boundaries": [
+        "TB1",
+        "TB2"
+      ],
+      "feasibility": 3,
+      "impact": 2,
+      "feasibility_reason": "The supplied record assumes a commodity receiver and no privileged access.",
+      "impact_reason": "Metadata can be exposed but ciphertext is not assumed to be decrypted.",
+      "confidence": "Medium",
+      "confidence_reason": "Medium in the supplied update. Relevance to S1 and section-level source support remain unchecked.",
+      "evidence": [
+        {
+          "reference_id": "R1",
+          "basis": "Context",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "The update cites 5G security for context. Ciphering is an assumption for this scenario."
+        },
+        {
+          "reference_id": "R3",
+          "basis": "Context",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "A maritime VSAT paper is cited. Transfer of its findings to this transparent LEO 5G scenario has not been established."
+        },
+        {
+          "reference_id": null,
+          "basis": "Assumption",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "Receiver feasibility and visible metadata depend on the selected radio environment. These details are not provided."
+        }
+      ],
+      "mitigations": [
+        {
+          "text": "Strong encryption of satellite-ground links and frequency hopping.",
+          "reference_id": "R1",
+          "note": "Candidate copied from the supplied update. Specific source support and suitability for S1 still require a human check."
+        }
+      ],
+      "review_status": "Imported",
+      "reviewer": "",
+      "review_date": "",
+      "origin": "Progress update v3. Page 1. Example T-03. Imported without claiming a new student review.",
+      "limitations": "A model-based candidate. No live attack or RF validation. Effects on several users are assumptions about the shared S1 service."
+    },
+    {
+      "id": "T-04",
+      "scenario": "S1",
+      "title": "5G Core interface DoS",
+      "stride": "Denial of Service",
+      "description": "An attacker floods signalling or user traffic towards the selected core path.",
+      "actor": "Attacker with a path towards the core interfaces.",
+      "conditions": "An attack path past the gateway.",
+      "controls": "Partial rate limiting at the core is assumed.",
+      "consequence": "Disruption affecting several users of the shared service.",
+      "components": [
+        "C5"
+      ],
+      "assets": [
+        "A3"
+      ],
+      "flows": [
+        "F4"
+      ],
+      "boundaries": [
+        "TB3"
+      ],
+      "feasibility": 2,
+      "impact": 3,
+      "feasibility_reason": "A path past the gateway is required.",
+      "impact_reason": "Several users of the shared service are assumed to be affected.",
+      "confidence": "Low",
+      "confidence_reason": "Low in the supplied update. Ratings depend on stated assumptions and unchecked source support.",
+      "evidence": [
+        {
+          "reference_id": null,
+          "basis": "Assumption",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "No measured flood or operator-specific control configuration is supplied."
+        }
+      ],
+      "mitigations": [
+        {
+          "text": "Rate limiting and anomaly detection at the gateway.",
+          "reference_id": "R4",
+          "note": "Candidate copied from the supplied update. Specific source support and suitability for S1 still require a human check."
+        }
+      ],
+      "review_status": "Imported",
+      "reviewer": "",
+      "review_date": "",
+      "origin": "Progress update v3. Page 1. Example T-04. Imported without claiming a new student review.",
+      "limitations": "A model-based candidate. No live attack or RF validation. Effects on several users are assumptions about the shared S1 service."
+    },
+    {
+      "id": "T-05",
+      "scenario": "S1",
+      "title": "Administration repudiation",
+      "stride": "Repudiation",
+      "description": "An administrator or an attacker with stolen credentials denies changes or erases local change records.",
+      "actor": "Administrator or attacker with stolen administration credentials.",
+      "conditions": "Privileged access to changes or local logs.",
+      "controls": "Only local administration logs are assumed.",
+      "consequence": "Changes cannot be traced under the assumed logging conditions.",
+      "components": [
+        "C6"
+      ],
+      "assets": [
+        "A5"
+      ],
+      "flows": [
+        "F5"
+      ],
+      "boundaries": [
+        "TB4"
+      ],
+      "feasibility": 2,
+      "impact": 3,
+      "feasibility_reason": "Privileged access is required.",
+      "impact_reason": "The supplied record assigns I3 because changes cannot be traced. Its fit to the I3 scope criteria needs joint review.",
+      "confidence": "Low",
+      "confidence_reason": "Low in the supplied update. Ratings depend on stated assumptions and unchecked source support.",
+      "evidence": [
+        {
+          "reference_id": null,
+          "basis": "Assumption",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "The local-only log design and ability to erase changes are assumptions. No operational evidence is supplied."
+        }
+      ],
+      "mitigations": [
+        {
+          "text": "Append-only remote audit logs with signed records.",
+          "reference_id": "R4",
+          "note": "Candidate copied from the supplied update. Specific source support and suitability for S1 still require a human check."
+        }
+      ],
+      "review_status": "Imported",
+      "reviewer": "",
+      "review_date": "",
+      "origin": "Progress update v3. Page 1. Example T-05. Imported without claiming a new student review.",
+      "limitations": "A model-based candidate. No live attack or RF validation. Effects on several users are assumptions about the shared S1 service."
+    },
+    {
+      "id": "T-06",
+      "scenario": "S1",
+      "title": "Jamming of the service radio link",
+      "stride": "Denial of Service",
+      "description": "Interference on the service radio link may disrupt the selected shared access service.",
+      "actor": "Attacker with access to the relevant radio environment.",
+      "conditions": "Suitable interference equipment and a suitable location.",
+      "controls": "No anti-jamming control is specified in the supplied plan.",
+      "consequence": "The plan assumes disruption for several users sharing the affected service.",
+      "components": [
+        "C1",
+        "C2"
+      ],
+      "assets": [
+        "A3"
+      ],
+      "flows": [
+        "F1"
+      ],
+      "boundaries": [
+        "TB1"
+      ],
+      "feasibility": null,
+      "impact": null,
+      "feasibility_reason": "Unscored. The plan gives L2. Attack feasibility must be reassessed using the latest F criteria.",
+      "impact_reason": "Unscored pending joint review of the latest feasibility and impact criteria.",
+      "confidence": "Low",
+      "confidence_reason": "Assumption-based draft in the supplied project plan. No new evidence was introduced.",
+      "evidence": [
+        {
+          "reference_id": "P1",
+          "basis": "Assumption",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "Draft candidate from project plan pages 5–6. Original likelihood scores were not copied as attack-feasibility scores."
+        }
+      ],
+      "mitigations": [
+        {
+          "text": "No candidate mitigation was specified in the supplied plan. Students must define and justify one.",
+          "reference_id": "P1",
+          "note": "This is a documented evidence gap. It is not a proposed validated control."
+        }
+      ],
+      "review_status": "Draft",
+      "reviewer": "",
+      "review_date": "",
+      "origin": "Project plan pages 5–6. Original T01 renamed to avoid collision with progress-update IDs.",
+      "limitations": "A model-based candidate. No live attack or RF validation. Effects on several users are assumptions about the shared S1 service."
+    },
+    {
+      "id": "T-07",
+      "scenario": "S1",
+      "title": "Use of stolen administration credentials",
+      "stride": "Spoofing",
+      "description": "An attacker obtains valid credentials and reaches the administration interface to change important ground configuration.",
+      "actor": "Attacker holding stolen administration credentials.",
+      "conditions": "Valid credentials and a reachable administration interface.",
+      "controls": "The supplied plan does not establish additional controls beyond the requirement for credentials.",
+      "consequence": "The plan assumes important configuration changes could interrupt the selected service.",
+      "components": [
+        "C3",
+        "C4",
+        "C6"
+      ],
+      "assets": [
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "flows": [
+        "F5"
+      ],
+      "boundaries": [
+        "TB4"
+      ],
+      "feasibility": null,
+      "impact": null,
+      "feasibility_reason": "Unscored. The plan gives L2. Attack feasibility must be reassessed using the latest F criteria.",
+      "impact_reason": "Unscored pending joint review of the latest feasibility and impact criteria.",
+      "confidence": "Low",
+      "confidence_reason": "Assumption-based draft in the supplied project plan. No new evidence was introduced.",
+      "evidence": [
+        {
+          "reference_id": "P1",
+          "basis": "Assumption",
+          "locator": "",
+          "checked": false,
+          "checked_by": "",
+          "checked_date": "",
+          "note": "Draft candidate from project plan pages 5–6. Original likelihood scores were not copied as attack-feasibility scores."
+        }
+      ],
+      "mitigations": [
+        {
+          "text": "No candidate mitigation was specified in the supplied plan. Students must define and justify one.",
+          "reference_id": "P1",
+          "note": "This is a documented evidence gap. It is not a proposed validated control."
+        }
+      ],
+      "review_status": "Draft",
+      "reviewer": "",
+      "review_date": "",
+      "origin": "Project plan pages 5–6. Original T02 renamed to avoid collision with progress-update IDs.",
+      "limitations": "A model-based candidate. No live attack or RF validation. Effects on several users are assumptions about the shared S1 service."
+    }
+  ]
+}

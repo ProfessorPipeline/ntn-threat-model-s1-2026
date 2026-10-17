@@ -1,0 +1,117 @@
+[
+  {
+    "entity": "A1",
+    "name": "Confidentiality and integrity of user traffic",
+    "candidate_ids": [
+      "T-03",
+      "T-10"
+    ],
+    "review_prompt": "Candidates considered: T-03 / T-10. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "A2",
+    "name": "Subscriber identity and authentication material",
+    "candidate_ids": [
+      "T-01"
+    ],
+    "review_prompt": "Candidates considered: T-01. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "A3",
+    "name": "Service availability and access capacity",
+    "candidate_ids": [
+      "T-01",
+      "T-04",
+      "T-06",
+      "T-07"
+    ],
+    "review_prompt": "Candidates considered: T-01 / T-04 / T-06 / T-07. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "A4",
+    "name": "Ground configuration and administration credentials",
+    "candidate_ids": [
+      "T-02",
+      "T-07",
+      "T-08",
+      "T-09"
+    ],
+    "review_prompt": "Candidates considered: T-02 / T-07 / T-08 / T-09. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "A5",
+    "name": "Administration change records and logs",
+    "candidate_ids": [
+      "T-05",
+      "T-07",
+      "T-08"
+    ],
+    "review_prompt": "Candidates considered: T-05 / T-07 / T-08. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "TB1",
+    "name": "User to space relay",
+    "candidate_ids": [
+      "T-01",
+      "T-03",
+      "T-06"
+    ],
+    "review_prompt": "Candidates considered: T-01 / T-03 / T-06. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "TB2",
+    "name": "Space relay to ground access",
+    "candidate_ids": [
+      "T-03"
+    ],
+    "review_prompt": "Candidates considered: T-03. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "TB3",
+    "name": "Ground access to operator core",
+    "candidate_ids": [
+      "T-04",
+      "T-10"
+    ],
+    "review_prompt": "Candidates considered: T-04 / T-10. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  },
+  {
+    "entity": "TB4",
+    "name": "Privileged administration access",
+    "candidate_ids": [
+      "T-02",
+      "T-05",
+      "T-07",
+      "T-08",
+      "T-09"
+    ],
+    "review_prompt": "Candidates considered: T-02 / T-05 / T-07 / T-08 / T-09. Confirm their mappings and identify missing threats. A mapping count is not a completed review.",
+    "status": "Pending",
+    "reviewer": "",
+    "review_date": ""
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "retrieved_on": "2026-10-17",
+  "checked_by": "Assistant source inspection. Student confirmation pending.",
+  "nist_catalog_version": "5.2.0",
+  "nist_catalog_url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+  "source_urls": {
+    "R1": "https://www.etsi.org/deliver/etsi_ts/133500_133599/133501/18.05.00_60/ts_133501v180500p.pdf",
+    "R3": "https://www.cs.ox.ac.uk/files/11922/Pavur%20et%20al%20A%20tale%20of%20sea%20and%20sky.pdf",
+    "R7": "https://cris.vtt.fi/ws/portalfiles/portal/106665346/j.future.2024.107500.pdf",
+    "R8": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json"
+  },
+  "nist_catalog_canonical_json_sha256": "32ca62d191be4c5ddb66b6d2905eedc546dcf7a0dadf201e5e5060a9040750d6",
+  "canonicalization": "UTF-8 json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(comma, colon))",
+  "checked_control_ids": [
+    "AC-3",
+    "AC-6",
+    "AU-9",
+    "AU-9(2)",
+    "AU-9(3)",
+    "AU-10",
+    "AU-12",
+    "CM-3",
+    "CM-5",
+    "IA-2(1)",
+    "IA-5",
+    "SC-5",
+    "SC-8",
+    "SC-40",
+    "SC-40(1)",
+    "SI-4",
+    "SI-7"
+  ]
+}

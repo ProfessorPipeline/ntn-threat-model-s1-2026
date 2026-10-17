@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+.git
+data/*.sqlite3*
+docs/*.mp4
+evidence
+tests
+tmp

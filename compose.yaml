@@ -1,0 +1,10 @@
+services:
+  ntn:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ntn-data:/app/data
+    restart: unless-stopped
+volumes:
+  ntn-data:
